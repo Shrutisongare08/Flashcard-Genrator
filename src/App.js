@@ -1,25 +1,39 @@
-import logo from './logo.svg';
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
+
+import store from './redux/store';
 import './App.css';
 
+import LogoBar from './components/LogoBar';
+import Navbar from './components/Navbar';
+import NoPageFound from './components/NoPageFound';
+import CreateFlashCard from './pages/CreateFlashCard';
+import FlashCardDetails from './pages/FlashCardDetails';
+import MyFlashCard from './pages/MyFlashcard';
+
+
 function App() {
-  return (
+   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <LogoBar/>
+     <div>
+         {/* Wrap the entire app in the Redux Provider */}
+         <Provider store={store}>
+            <Router>
+              <Navbar/>
+              <Routes>
+               <Route path='/createflashcard' element={<CreateFlashCard/>}>CreateFlashcard</Route>
+               <Route path='/myFlashcard' element={<MyFlashCard/>}>MyFlashcard</Route>
+               <Route path='/flashCardDetails' element={<FlashCardDetails/>}>FlashCardDetails Page</Route>
+               <Route path='*' element={<CreateFlashCard/>}>Default Page</Route>
+               <Route path='*' element={<NoPageFound/>}>Page Not Found</Route>
+              </Routes>
+            </Router>
+         </Provider>
+     </div>
     </div>
-  );
+   )
 }
 
 export default App;
