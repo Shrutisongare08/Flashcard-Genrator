@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+body::-webkit-scrollbar {
+  overflow: hidden;
+  width: 0px;
+}
 
 .descScroll::-webkit-scrollbar {
   background-color: transparent;
