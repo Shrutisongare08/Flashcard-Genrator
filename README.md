@@ -4,11 +4,11 @@
 
 ## Features
 
-- Card Creation: Easily create and customize flashcards with text and images.
-- Sharing: Share your flashcards with others seamlessly.
-- Download and Print: Download flashcards in various formats and print them for offline use.
-- Deletion: Remove unwanted flashcards with ease.
-- Responsive Design: Enjoy a fully responsive user interface that provides a seamless experience across all devices.
+- **Card Creation**: Easily create and customize flashcards with text and images.
+- **Sharing**: Share your flashcards with others seamlessly.
+- **Download and Print**: Download flashcards in various formats and print them for offline use.
+- **Deletion**: Remove unwanted flashcards with ease.
+- **Responsive Design**: Enjoy a fully responsive user interface that provides a seamless experience across all devices.
 
   This Project Consists of 3 main pages:
 
@@ -48,10 +48,20 @@
 
       ![screenshot(7)](https://github.com/user-attachments/assets/c8f2a9fd-33f0-45d0-9167-139aea43e2d0)
 
-  ### `TECHNOLOGIES USED`
+### `Tech Stack`
 
-  This project was constructed utilizing a variety of frontend technologies, including the `React` `JavaScript` library for the core structure, `Tailwind CSS` to craft a responsive user interface, `Redux` for efficient state management, `React-icons`, `Formik`, `React-Router-Dom`, `jspdf`, `yup` and `react-testing-library/jest` for testing purposes.
+  Flashcard Generator is built using the following technologies:
 
+- **React:** JavaScript library for building user interfaces.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **Redux:** Predictable state management library for managing application state.
+- **Formik:** Form library for simplified form management and validation.
+- **Yup:** JavaScript schema validation library for form validation.
+- **React Icons:** Library for including popular icon sets as React components.
+
+### `Deploy Link`
+
+   https://flashcardgenrator.netlify.app/
 
  ### `PROJECT CLONING AND RUNNING`
 
